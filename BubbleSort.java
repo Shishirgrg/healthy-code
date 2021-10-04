@@ -1,10 +1,10 @@
 public class BubbleSort {
 
     public static void main(String args[]) {
-        int array[] = { 2, 8, 5, 3, 9, 4, 1, 20, 100, 2 };
-        int k = array.length;
-        while (k >= 0) {
-            for (int i = 0; i < k - 1; i++) {
+        int array[] = { 2, 8, 5, 3, 9, 4, 1, 12, 20, 100, 2 };
+        int j = array.length;
+        while (j >= 0) {
+            for (int i = 0; i < j - 1; i++) {
                 if (array[i] > array[i + 1]) {
                     // swap
                     int tmep;
@@ -13,7 +13,7 @@ public class BubbleSort {
                     array[i + 1] = tmep;
                 }
             }
-            k--;
+            j--;
         }
 
         for (int i = 0; i < array.length; i++) {
